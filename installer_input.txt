@@ -327,7 +327,7 @@ product.MATLAB
 #product.Simulink_Test
 #product.Spreadsheet_Link
 #product.Stateflow
-#product.Statistics_and_Machine_Learning_Toolbox
+product.Statistics_and_Machine_Learning_Toolbox
 #product.Symbolic_Math_Toolbox
 #product.System_Identification_Toolbox
 #product.Text_Analytics_Toolbox

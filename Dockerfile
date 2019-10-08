@@ -26,3 +26,6 @@ RUN \
     python setup.py install && cd ~
 ENV PATH=/usr/local/matlab2017b/bin${PATH:+:${PATH}} LD_PRELOAD=/opt/conda/envs/clamp/lib/libstdc++.so.6
 # alternative:cp /etc/bash.bashrc /etc/bash.bashrc_backup && cp /home/docker_files/bash.bashrc /etc/bash.bashrc
+
+# config R environment
+RUN conda activate r_env && cd /home/docker_files/ && R -f install_IRkernel.R && conda activate clamp
